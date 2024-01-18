@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logoImg from '../assets/Images/Logo.png'
+import logoImg from '../Assets/Images/Logo.png'
 import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
