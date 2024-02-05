@@ -6,3 +6,56 @@
     color: white;
     font-weight: 600;
 }
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #B88E2F;
+
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+
+.buyBtn {
+    border: none;
+    background: #B88E2F;
+    color: white;
+    padding: 12px 35px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.buyBtn:hover {
+    background: #967528;
+}

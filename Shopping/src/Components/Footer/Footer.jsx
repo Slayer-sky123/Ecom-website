@@ -2,18 +2,40 @@ import { Link } from 'react-router-dom'
 import footerLogo from '../Assets/Images/Logo.png'
 const Footer = () => {
     return (
-        <section className="bg-[#1f2937]">
-            <div className="p-8 flex flex-col items-center justify-center gap-7">
-                <img className='w-14 h-14' src={footerLogo} alt="" />
-                <ul className='flex justify-center gap-10 items-center'>
-                    <li><Link to="/" className='text-white'>Shop</Link></li>
-                    <li><Link to="mens" className='text-white'>Mens</Link></li>
-                    <li><Link to="womens" className='text-white'>Womens</Link></li>
-                    <li><Link to="kids" className='text-white'>Kids</Link></li>
-                </ul>
+        <section className="bg-white border-t border-gray-300">
+            <div className="grid grid-cols-12 md:grid-cols-12 gap-5 px-2 py-8 md:py-16 md:px-16">
+                <div className='col-span-12 md:col-span-4 flex flex-col justify-start gap-5 items-start'>
+                    <img className='w-32 h-6' src={footerLogo} alt="" />
+                    <p className='text-[#9f9f9f]'>400 University Drive Suite 200 Coral Gables,
+                        FL 33134 USA</p>
+                    <p></p>
+                </div>
+                <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
+                    <h6 className='text-[#9f9f9f] font-semibold'>Links</h6>
+                    <ul className='flex flex-col justify-start gap-5 items-start md:items-center'>
+                        <li><Link to="/" className='text-black'>Shop</Link></li>
+                        <li><Link to="mens" className='text-black'>Mens</Link></li>
+                        <li><Link to="womens" className='text-black'>Womens</Link></li>
+                        <li><Link to="kids" className='text-black'>Kids</Link></li>
+                    </ul>
+                </div>
+                <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
+                    <h6 className='text-[#9f9f9f] font-semibold'>Help</h6>
+                    <ul className='flex flex-col justify-start gap-5 items-start md:items-center'>
+                        <li><Link className='text-black'>Payment Options</Link></li>
+                        <li><Link className='text-black'>Returns</Link></li>
+                        <li><Link className='text-black'>Privacy Policy</Link></li>
+                    </ul>
+                </div>
+                <div className='col-span-12 md:col-span-4 flex flex-col justify-start gap-5 items-center'>
+                    <h6 className='text-[#9f9f9f] font-semibold'>Newsletter</h6>
+                    <form action="" className='flex justify-start gap-4 items-center'>
+                        <input type="email" placeholder='Enter Your Email Address' />
+                        <button type='submit' className='uppercase font-semibold underline'>Subscribe</button>
+                    </form>
+                </div>
             </div>
-            <p className='border border-gray-600 w-full'></p>
-            <p className='text-white text-center p-4'>All copyrights Reserved @2024</p>
+
         </section>
     )
 }
