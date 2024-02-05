@@ -13,10 +13,10 @@ const Footer = () => {
                 <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
                     <h6 className='text-[#9f9f9f] font-semibold'>Links</h6>
                     <ul className='flex flex-col justify-start gap-5 items-start md:items-center'>
-                        <li><Link to="/" className='text-black'>Shop</Link></li>
-                        <li><Link to="mens" className='text-black'>Mens</Link></li>
-                        <li><Link to="womens" className='text-black'>Womens</Link></li>
-                        <li><Link to="kids" className='text-black'>Kids</Link></li>
+                        <li><Link to="/" className='text-black'>Home</Link></li>
+                        <li><Link to="shop" className='text-black'>Shop</Link></li>
+                        <li><Link to="about" className='text-black'>About</Link></li>
+                        <li><Link to="contact" className='text-black'>Contact</Link></li>
                     </ul>
                 </div>
                 <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
@@ -34,8 +34,11 @@ const Footer = () => {
                         <button type='submit' className='uppercase font-semibold underline'>Subscribe</button>
                     </form>
                 </div>
-            </div>
 
+            </div>
+            <div className='px-2 md:px-16 border-t border-gray-300 py-4'>
+                <p className='text-sm'>2023 furino. All rights reverved</p>
+            </div>
         </section>
     )
 }

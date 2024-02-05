@@ -1,22 +1,22 @@
 import Navbar from "./Components/Navbar/Navbar"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Shop from "./Pages/Shop"
-import Mens from "./Pages/Mens"
-import Womens from "./Pages/Womens"
-import Kids from "./Pages/Kids"
 import NoPage from "./Pages/NoPage"
 import Login from "./Pages/Login"
 import Footer from "./Components/Footer/Footer"
+import Home from "./Pages/Home"
+import Shop from "./Pages/Shop"
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
 function App() {
 
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route index element={<Shop />} />
-        <Route path="mens" element={<Mens />} />
-        <Route path="womens" element={<Womens />} />
-        <Route path="kids" element={<Kids />} />
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="login" element={<Login />} />
         <Route path="*" element={<NoPage />} />
       </Routes>

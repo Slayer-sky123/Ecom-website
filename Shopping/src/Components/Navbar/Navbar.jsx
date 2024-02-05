@@ -18,16 +18,16 @@ const Navbar = () => {
                             <div className="hidden md:block">
                                 <div className="flex items-center space-x-6">
                                     <Link to="/" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
+                                        Home
+                                    </Link>
+                                    <Link to="/shop" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
                                         Shop
                                     </Link>
-                                    <Link to="/mens" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Mens
+                                    <Link to="/about" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
+                                        About
                                     </Link>
-                                    <Link to="/womens" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Womens
-                                    </Link>
-                                    <Link to="/kids" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Kids
+                                    <Link to="/contact" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
+                                        Contact
                                     </Link>
                                 </div>
                             </div>

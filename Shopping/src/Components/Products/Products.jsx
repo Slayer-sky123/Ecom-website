@@ -1,4 +1,3 @@
-import './Products.css'
 const Products = () => {
     const items = [
         {
