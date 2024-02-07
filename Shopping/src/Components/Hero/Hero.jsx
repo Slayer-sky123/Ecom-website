@@ -7,7 +7,7 @@ const Hero = () => {
                     <div className='md:col-span-6'></div>
                     <div className='md:col-span-6'>
                         <div className='bg-[#fff3e3] p-5 md:p-8 flex flex-col items-start gap-4'>
-                            <h5>New Arrival</h5>
+                            <h5 className='whitespace-nowrap'>New Arrival</h5>
                             <h1>Discover Our New Collection</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                             <a href="#" className='buyBtn mt-3'>Buy Now</a>

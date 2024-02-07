@@ -67,17 +67,17 @@ const Navbar = () => {
                 {/* <=========Mobile Nav===========> */}
                 <div className="md:hidden">
                     <div className={`${visible ? '' : 'hidden'} px-2 pt-2 pb-3 space-y-8 sm:px-3`}>
-                        <Link to="/" className="text-black hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" >
+                        <Link to="/" className="text-black block px-3 py-2 rounded-md text-base font-medium" >
+                            Home
+                        </Link>
+                        <Link to="shop" className="text-black block px-3 py-2 rounded-md text-base font-medium">
                             Shop
                         </Link>
-                        <Link to="/mens" className="text-black dark:text-white block px-3 py-2 rounded-md text-base font-medium" >
-                            Mens
+                        <Link to="about" className="text-black block px-3 py-2 rounded-md text-base font-medium" >
+                            About
                         </Link>
-                        <Link to="/womens" className="text-black hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" >
-                            Womens
-                        </Link>
-                        <Link to="/kids" className="text-black hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" >
-                            Kids
+                        <Link to="/contact" className="text-black block px-3 py-2 rounded-md text-base font-medium" >
+                            Contact
                         </Link>
 
                     </div>

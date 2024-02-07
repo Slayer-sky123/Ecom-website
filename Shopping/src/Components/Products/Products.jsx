@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Products = () => {
     const items = [
         {
@@ -75,7 +76,7 @@ const Products = () => {
     ]
     return (
         <>
-            <section className="grid grid-cols-1 md:grid-cols-4 gap-5 px-2 md:px-16">
+            <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 px-2 md:px-16">
                 {items.map((item) => (
                     <div key={item.id} className="productCard">
                         <img className='aspect-square' loading='lazy' src={item.imageSrc} alt={item.imageAlt} />
@@ -88,7 +89,10 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='productOverly'>
-                            <a href="#" className='addCartBtn'>Add to cart</a>
+                            <div className="flex gap-2 items-center">
+                                <a href="#" className='addCartBtn'>Add to Cart</a>
+                                <Link to="/details" className='addCartBtn'>View</Link>
+                            </div>
                             <div className='flex justify-between items-center gap-5'>
                                 <a href="#" className='flex justify-start items-center gap-1 text-white font-semibold'>
                                     <svg width="12" height="14" viewBox="0 0 12 14" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +111,7 @@ const Products = () => {
 
                                 <a href="#" className='flex justify-start items-center gap-1 text-white font-semibold'>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" stroke-width="1.8" />
+                                        <path d="M7.99973 14.0361C-5.33333 6.66669 3.99999 -1.33331 7.99973 3.72539C12 -1.33331 21.3333 6.66669 7.99973 14.0361Z" stroke="white" strokeWidth="1.8" />
                                     </svg>
 
                                     Like

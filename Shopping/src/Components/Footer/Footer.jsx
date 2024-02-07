@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="grid grid-cols-12 md:grid-cols-12 gap-5 px-2 py-8 md:py-16 md:px-16">
                 <div className='col-span-12 md:col-span-4 flex flex-col justify-start gap-5 items-start'>
                     <img className='w-32 h-6' src={footerLogo} alt="" />
-                    <p className='text-[#9f9f9f]'>400 University Drive Suite 200 Coral Gables,
+                    <p className='text-[#9f9f9f] text-sm'>400 University Drive Suite 200 Coral Gables,
                         FL 33134 USA</p>
                     <p></p>
                 </div>
