@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import logoImg from '../Assets/Images/Logo.png'
 import { Link } from 'react-router-dom';
-const Navbar = () => {
+const Navbar = (props) => {
+    let { navOptions } = props;
     const [visible, setVisible] = useState(false);
     const setToggle = () => {
         setVisible(!visible);
@@ -18,16 +19,16 @@ const Navbar = () => {
                             <div className="hidden md:block">
                                 <div className="flex items-center space-x-6">
                                     <Link to="/" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Home
+                                        {navOptions.page1}
                                     </Link>
                                     <Link to="/shop" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Shop
+                                        {navOptions.page2}
                                     </Link>
                                     <Link to="/about" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        About
+                                        {navOptions.page3}
                                     </Link>
                                     <Link to="/contact" className="text-black border-b-2 border-transparent focus:border-b-2 focus:border-[#F7B030] px-3 py-2 text-sm font-medium" >
-                                        Contact
+                                        {navOptions.page4}
                                     </Link>
                                 </div>
                             </div>

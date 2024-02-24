@@ -8,11 +8,17 @@ import Shop from "./Pages/Shop"
 import About from "./Pages/About"
 import Contact from "./Pages/Contact"
 import ProductDetails from "./Pages/ProductDetails"
+import Cart from "./Pages/Cart"
 function App() {
-
+  let navOptions = {
+    page1: "Home",
+    page2: "Shop",
+    page3: "About",
+    page4: "Contact",
+  }
   return (
     <BrowserRouter>
-      <Navbar />
+      <Navbar navOptions={navOptions} />
       <Routes>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
@@ -21,6 +27,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="*" element={<NoPage />} />
         <Route path="details" element={<ProductDetails />} />
+        <Route path="cart" element={<Cart />} />
       </Routes>
       <Footer />
     </BrowserRouter>

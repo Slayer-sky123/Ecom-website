@@ -3,14 +3,14 @@ import footerLogo from '../Assets/Images/Logo.png'
 const Footer = () => {
     return (
         <section className="bg-white border-t border-gray-300">
-            <div className="grid grid-cols-12 md:grid-cols-12 gap-5 px-2 py-8 md:py-16 md:px-16">
-                <div className='col-span-12 md:col-span-4 flex flex-col justify-start gap-5 items-start'>
+            <div className="grid grid-cols-12 md:grid-cols-12 lg:grid-cols-12 gap-5 px-2 py-8 md:py-16 md:px-16">
+                <div className='col-span-12 md:col-span-4 lg:col-span-4 flex flex-col justify-start gap-5 items-start'>
                     <img className='w-32 h-6' src={footerLogo} alt="" />
                     <p className='text-[#9f9f9f] text-sm'>400 University Drive Suite 200 Coral Gables,
                         FL 33134 USA</p>
                     <p></p>
                 </div>
-                <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
+                <div className='col-span-6 md:col-span-4 lg:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
                     <h6 className='text-[#9f9f9f] font-semibold'>Links</h6>
                     <ul className='flex flex-col justify-start gap-5 items-start md:items-center'>
                         <li><Link to="/" className='text-black'>Home</Link></li>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <li><Link to="contact" className='text-black'>Contact</Link></li>
                     </ul>
                 </div>
-                <div className='col-span-6 md:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
+                <div className='col-span-6 md:col-span-4 lg:col-span-2 flex flex-col justify-start gap-5 items-start md:items-center'>
                     <h6 className='text-[#9f9f9f] font-semibold'>Help</h6>
                     <ul className='flex flex-col justify-start gap-5 items-start md:items-center'>
                         <li><Link className='text-black'>Payment Options</Link></li>
@@ -27,7 +27,7 @@ const Footer = () => {
                         <li><Link className='text-black'>Privacy Policy</Link></li>
                     </ul>
                 </div>
-                <div className='col-span-12 md:col-span-4 flex flex-col justify-start gap-5 items-center'>
+                <div className='col-span-12 md:col-span-12 lg:col-span-4 flex flex-col justify-start gap-5 items-center'>
                     <h6 className='text-[#9f9f9f] font-semibold'>Newsletter</h6>
                     <form action="" className='flex justify-start gap-4 items-center'>
                         <input type="email" placeholder='Enter Your Email Address' />
