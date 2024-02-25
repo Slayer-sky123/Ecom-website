@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Hero.css'
 const Hero = () => {
     return (
