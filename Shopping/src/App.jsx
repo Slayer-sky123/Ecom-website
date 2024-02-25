@@ -9,6 +9,7 @@ import About from "./Pages/About"
 import Contact from "./Pages/Contact"
 import ProductDetails from "./Pages/ProductDetails"
 import Cart from "./Pages/Cart"
+import Checkout from "./Pages/Checkout"
 function App() {
   let navOptions = {
     page1: "Home",
@@ -28,6 +29,7 @@ function App() {
         <Route path="*" element={<NoPage />} />
         <Route path="details" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </BrowserRouter>
