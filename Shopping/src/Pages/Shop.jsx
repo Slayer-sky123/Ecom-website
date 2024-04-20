@@ -2,7 +2,18 @@ import { Link } from "react-router-dom"
 import Banner from "../Components/Banner/Banner"
 import Counter from "../Components/Counter"
 import { items } from "../Data/shopProduct"
+import { useState } from "react"
 const Shop = () => {
+  const [displayedProducts, setDisplayedProducts] = useState(items.slice(0, 16));
+  const startIndex = displayedProducts.length > 0 ? items.indexOf(displayedProducts[0]) + 1 : 0;
+  const endIndex = startIndex + displayedProducts.length - 1;
+  const totalProducts = items.length;
+  const showPreviousProducts = () => {
+    setDisplayedProducts(items.slice(0, 16));
+  }
+  const showNextProducts = () => {
+    setDisplayedProducts(items.slice(16, 32));
+  }
   return (
     <>
       <Banner
@@ -30,10 +41,10 @@ const Shop = () => {
             </button>
           </div>
           <div className="border-s-2 border-black ps-6">
-            <p className="text-sm font-normal">Showing 1–16 of 32 results</p>
+            <p className="text-sm font-normal">Showing {startIndex}-{endIndex} of {totalProducts} results</p>
           </div>
         </div>
-        <div className="flex gap-4 items-center">
+        {/* <div className="flex gap-4 items-center">
           <div className="flex gap-3 items-center">
             <p className="text-sm">Show</p>
             <div className="flex items-center justify-center bg-white py-2 px-4 text-gray-500">
@@ -49,11 +60,11 @@ const Shop = () => {
               <option value="audi">Popular</option>
             </select>
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 px-2 md:px-16">
-          {items.map((item) => (
+          {displayedProducts.map((item) => (
             <div key={item.id} className="productCard">
               <img className='aspect-square' loading='lazy' src={item.imageSrc} alt={item.imageAlt} />
               <div className='productBody p-2 md:p-4'>
@@ -98,10 +109,10 @@ const Shop = () => {
           ))}
         </div>
         <div className="gap-4 flex justify-center items-center mt-10">
-          <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">1</button>
-          <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">2</button>
-          <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">3</button>
-          <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">Next</button>
+          <button onClick={showPreviousProducts} className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">1</button>
+          <button onClick={showNextProducts} className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">2</button>
+          {/* <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">3</button>
+          <button className="bg-[#f9f1e7] rounded-md py-2 px-4 hover:text-white hover:bg-[#b88e2f] active:text-white active:bg-[#b88e2f]">Next</button> */}
         </div>
       </section>
       <Counter />

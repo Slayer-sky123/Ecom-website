@@ -143,4 +143,149 @@ export const items = [
         currentPrice: '1,500',
         oldPrice: '3,000'
     }
+    ,
+    {
+        id: 17,
+        imageSrc: 'https://unsplash.com/photos/X5BWooeO4Cw/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMXww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Syltherine',
+        description: 'Stylish cafe chair',
+        currentPrice: '2,500',
+        oldPrice: '4,120'
+    },
+    {
+        id: 18,
+        imageSrc: 'https://unsplash.com/photos/9v7UJS92HYc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMnww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Wooden Dining Table',
+        description: 'Stylish cafe chair',
+        currentPrice: '2,599',
+        oldPrice: '3,500'
+    },
+    {
+        id: 19,
+        imageSrc: 'https://unsplash.com/photos/7tFlUFGa7Dk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMnww&force=true&w=640',
+        imageAlt: '#',
+        title: 'White Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '4,500',
+        oldPrice: '5,500'
+    },
+    {
+        id: 20,
+        imageSrc: 'https://unsplash.com/photos/zXFtsdi9dIc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fGRpbm5pbmclMjBmdXJuaXR1cmUlMjBhc3RoZXRpY3xlbnwwfHx8fDE3MDcwMzUzMDJ8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 21,
+        imageSrc: 'https://unsplash.com/photos/YI2YkyaREHk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8aG9tZSUyMGRlY29yfGVufDB8fHx8MTcwNzA2NzczNHww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 22,
+        imageSrc: 'https://unsplash.com/photos/OtXADkUh3-I/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8aG9tZSUyMGRlY29yfGVufDB8fHx8MTcwNzA2NzczNHww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 23,
+        imageSrc: 'https://unsplash.com/photos/KSfe2Z4REEM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTB8fGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3MDcwNjc3MzR8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 24,
+        imageSrc: 'https://unsplash.com/photos/TWOnvtstmeU/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjB8fGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3MDcwNjc3MzR8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 25,
+        imageSrc: 'https://unsplash.com/photos/X5BWooeO4Cw/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMXww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Syltherine',
+        description: 'Stylish cafe chair',
+        currentPrice: '2,500',
+        oldPrice: '4,120'
+    },
+    {
+        id: 26,
+        imageSrc: 'https://unsplash.com/photos/9v7UJS92HYc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NXx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMnww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Wooden Dining Table',
+        description: 'Stylish cafe chair',
+        currentPrice: '2,599',
+        oldPrice: '3,500'
+    },
+    {
+        id: 27,
+        imageSrc: 'https://unsplash.com/photos/7tFlUFGa7Dk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8ZGlubmluZyUyMGZ1cm5pdHVyZSUyMGFzdGhldGljfGVufDB8fHx8MTcwNzAzNTMwMnww&force=true&w=640',
+        imageAlt: '#',
+        title: 'White Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '4,500',
+        oldPrice: '5,500'
+    },
+    {
+        id: 28,
+        imageSrc: 'https://unsplash.com/photos/zXFtsdi9dIc/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTF8fGRpbm5pbmclMjBmdXJuaXR1cmUlMjBhc3RoZXRpY3xlbnwwfHx8fDE3MDcwMzUzMDJ8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 29,
+        imageSrc: 'https://unsplash.com/photos/YI2YkyaREHk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8aG9tZSUyMGRlY29yfGVufDB8fHx8MTcwNzA2NzczNHww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 30,
+        imageSrc: 'https://unsplash.com/photos/OtXADkUh3-I/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8aG9tZSUyMGRlY29yfGVufDB8fHx8MTcwNzA2NzczNHww&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 31,
+        imageSrc: 'https://unsplash.com/photos/KSfe2Z4REEM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTB8fGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3MDcwNjc3MzR8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    },
+    {
+        id: 32,
+        imageSrc: 'https://unsplash.com/photos/TWOnvtstmeU/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjB8fGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3MDcwNjc3MzR8MA&force=true&w=640',
+        imageAlt: '#',
+        title: 'Cushion Stuffed Chair',
+        description: 'Stylish cafe chair',
+        currentPrice: '1,500',
+        oldPrice: '3,000'
+    }
 ]
